@@ -1,28 +1,11 @@
 <?php
-/**
- * Copyright since 2007 PrestaShop SA and Contributors
- * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License 3.0 (AFL-3.0)
- * that is bundled with this package in the file LICENSE.md.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/AFL-3.0
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@prestashop.com so we can send you a copy immediately.
- *
- * @author    PrestaShop SA <contact@prestashop.com>
- * @copyright Since 2007 PrestaShop SA and Contributors
- * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
- */
-global $_MODULE;
-$_MODULE = [];
 
+global $_MODULE;
+$_MODULE = array();
 $_MODULE['<{ps_checkout}prestashop>ps_checkout_94e99b8ebfc769e4d94736e575bfbe0b'] = 'PrestaShop Checkout';
 $_MODULE['<{ps_checkout}prestashop>ps_checkout_b6aa9dd84faacf7932dfa15fefad521a'] = 'Provide the most commonly used payment methods to your customers in this all-in-one module, and manage all your sales in a centralized interface.';
 $_MODULE['<{ps_checkout}prestashop>ps_checkout_bb8956c67b82c7444a80c6b2433dd8b4'] = 'Are you sure you want to uninstall this module?';
+$_MODULE['<{ps_checkout}prestashop>ps_checkout_aec47b33255dfc9e90e269930c428c40'] = 'Please wait, loading additional payment methods.';
 $_MODULE['<{ps_checkout}prestashop>ps_checkout_2347172eb56070e194a4a9367d2b0b2f'] = 'You have selected your [PAYPAL_ACCOUNT] PayPal account to proceed to the payment.';
 $_MODULE['<{ps_checkout}prestashop>ps_checkout_644818852b4dd8cf9da73543e30f045a'] = 'Go back to the Checkout';
 $_MODULE['<{ps_checkout}prestashop>ps_checkout_6ff063fbc860a79759a7369ac32cee22'] = 'Checkout';
@@ -50,8 +33,58 @@ $_MODULE['<{ps_checkout}prestashop>ps_checkout_46b9e3665f187c739c55983f757ccda0'
 $_MODULE['<{ps_checkout}prestashop>ps_checkout_100e10b5e05d4b3abd2cd52fd12e8789'] = 'There was an error during the payment. Please try again or contact the support.';
 $_MODULE['<{ps_checkout}prestashop>ps_checkout_72e506c5e5a9308bb3836d539dc4e39e'] = 'Thanks for your purchase!';
 $_MODULE['<{ps_checkout}prestashop>ps_checkout_490098b6f04cb77f81f6e4878f6869f2'] = 'Please wait, we proceed to payment';
+$_MODULE['<{ps_checkout}prestashop>ps_checkout_78432b718ec482b7211e1a45785087f1'] = 'Card holder authentication canceled, please choose another payment method or try again.';
+$_MODULE['<{ps_checkout}prestashop>ps_checkout_39dc86ebdd6c930447215d738bc4d15f'] = 'An error occurred on card holder authentication, please choose another payment method or try again.';
+$_MODULE['<{ps_checkout}prestashop>ps_checkout_816565ccf105493c7b15166627f6fc16'] = 'Card holder authentication failed, please choose another payment method or try again.';
+$_MODULE['<{ps_checkout}prestashop>ps_checkout_52afb370f87a4acfe4f1aaee204835eb'] = 'Card holder authentication cannot be checked, please choose another payment method or try again.';
 $_MODULE['<{ps_checkout}prestashop>ps_checkout_f212c48fb02b2494070e22184cc8906b'] = 'PayPal Order Id:';
 $_MODULE['<{ps_checkout}prestashop>ps_checkout_dbb50a3167fd387cac23808bd55a9ee4'] = 'PayPal Transaction Id:';
+$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_1b43db46cf115ecaf2b2e79c780b5266'] = 'No PrestaShop Order identifier received';
+$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_8aeb76260f5c8706d7e4e723f4417424'] = 'This PrestaShop Order [PRESTASHOP_ORDER_ID] is not paid with PrestaShop Checkout';
+$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_0f1c930c145fe9e076b18148be8d2860'] = 'Unable to find PayPal Order associated to this PrestaShop Order [PRESTASHOP_ORDER_ID]';
+$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_e0284fd0919f131573a5b9a542f80a58'] = 'Unable to fetch PayPal Order [PAYPAL_ORDER_ID]';
+$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_ccf338e772778287ddef6911855e5ba3'] = 'PayPal Order is invalid.';
+$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_bc06e3a40808fc7351ff8f57b3bad7cf'] = 'PayPal Transaction is invalid.';
+$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_5825dada06af7bef8ae4db80c2c5aeba'] = 'PayPal refund amount is invalid.';
+$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_da74acca9d5669367fa982b7694f5303'] = 'PayPal refund currency is invalid.';
+$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_d1a7ac6d45dcb4a782b441e29380056a'] = 'Refund has been processed by PayPal.';
+$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_ee6403a0a4d60590a6b6634df2fdce3f'] = 'Refund cannot be processed by PayPal.';
+$_MODULE['<{ps_checkout}prestashop>validate_ff74fb308795919496b905a116ae1da6'] = 'This payment method is unavailable';
+$_MODULE['<{ps_checkout}prestashop>validate_7a10859a43abaade1a012eee5c336004'] = 'Unable to call API';
+$_MODULE['<{ps_checkout}prestashop>validate_2be21e54f13c38cffa6982e6745e6f88'] = 'PayPal order identifier is missing';
+$_MODULE['<{ps_checkout}prestashop>validate_74669be39f71a0c86319cba711d40bb6'] = 'PayPal payment method is missing';
+$_MODULE['<{ps_checkout}prestashop>validate_2cf1090c7f589e820c7379dd616aa927'] = 'Cart is invalid';
+$_MODULE['<{ps_checkout}prestashop>validate_3c79e9f67771d5e278886a2d54f18c29'] = 'Order cannot be saved';
+$_MODULE['<{ps_checkout}prestashop>validate_fdef7819688bef617b84868f7713f883'] = 'This message is sent automatically by module PrestaShop Checkout';
+$_MODULE['<{ps_checkout}prestashop>validate_ee02bd0a1dffdbc6ee993d07fa3997b7'] = 'A customer encountered a processing payment error :';
+$_MODULE['<{ps_checkout}prestashop>validate_162c9109e4428997906e50651ef16b33'] = 'Customer identifier:';
+$_MODULE['<{ps_checkout}prestashop>validate_1889f1b9cd95ba96c924904b633e6802'] = 'Cart identifier:';
+$_MODULE['<{ps_checkout}prestashop>validate_937a6208751c6044e846b7e70cf5305c'] = 'PayPal order identifier:';
+$_MODULE['<{ps_checkout}prestashop>validate_c4dde5b1549f1efa1692d8873acb62db'] = 'Exception identifier:';
+$_MODULE['<{ps_checkout}prestashop>validate_b0245f6ceb905dcd9d2cda968eca9290'] = 'Exception detail:';
+$_MODULE['<{ps_checkout}prestashop>validate_ad882fed0995d9be1922fff253202368'] = 'If you need assistance, please contact our Support Team on PrestaShop Checkout configuration page on Help subtab.';
+$_MODULE['<{ps_checkout}prestashop>displaypayment_a44217022190f5734b2f72ba1e4f8a79'] = 'Card number';
+$_MODULE['<{ps_checkout}prestashop>displaypayment_95b16127e70e8a90220404fb48343182'] = 'Expiry date';
+$_MODULE['<{ps_checkout}prestashop>displaypayment_5ea7f231296949070013bc43715aae01'] = 'CVC';
+$_MODULE['<{ps_checkout}prestashop>displaypayment_46b9e3665f187c739c55983f757ccda0'] = 'I confirm my order';
+$_MODULE['<{ps_checkout}prestashop>displaypaymenttop_733ea3e302b9c48da7777481ed50e59a'] = 'Processing payment canceled, please choose another payment method or try again.';
+$_MODULE['<{ps_checkout}prestashop>displaypaymenttop_42275e6d860a19342a3943af7d1e48a0'] = 'Processing payment error';
+$_MODULE['<{ps_checkout}prestashop>paymentoptions_a44217022190f5734b2f72ba1e4f8a79'] = 'Card number';
+$_MODULE['<{ps_checkout}prestashop>paymentoptions_95b16127e70e8a90220404fb48343182'] = 'Expiry date';
+$_MODULE['<{ps_checkout}prestashop>paymentoptions_5ea7f231296949070013bc43715aae01'] = 'CVC';
+$_MODULE['<{ps_checkout}prestashop>displayorderconfirmation_a47005f7a79a267052608d713c8cfe8d'] = 'Your order hasn\'t been validated yet, only created. There can be an issue with your payment or it can be captured later, please contact our customer service to have more details about it.';
+$_MODULE['<{ps_checkout}prestashop>displayorderconfirmation_32187a5bef114c112c1ef96ca2e3da1a'] = 'Your order is confirmed.';
+$_MODULE['<{ps_checkout}prestashop>displaypaymentbybinaries_d7467080ec566ee0c6cb59242ee28fa5'] = 'You must accept the terms and conditions to be able to process your order.';
+$_MODULE['<{ps_checkout}prestashop>incompatiblecodes_a841f3841c6b7c77fa7e2e1c20e284fc'] = 'PrestaShop Checkout transactions won\'t work in some of your configured {$codesType}, but there is a solution !';
+$_MODULE['<{ps_checkout}prestashop>incompatiblecodes_a4e8c4aedf01bae8876d415df3925f65'] = 'Please upgrade your settings for :';
+$_MODULE['<{ps_checkout}prestashop>incompatiblecodes_102c3c2bd444bb970f12b2f22560709f'] = 'Change {$codesType} activation for this payment module';
+$_MODULE['<{ps_checkout}prestashop>incompatiblecodes_cb2afa98a49d1ac44da748a5ee556a8a'] = 'Know more about compliant ISO Codes';
+$_MODULE['<{ps_checkout}prestashop>promotionblock_565c23511bb8643ac5552fbd5e4ba358'] = 'One module, all payments methods.';
+$_MODULE['<{ps_checkout}prestashop>promotionblock_83c6cac8e2ac2ca242a4c1b7e3062bf8'] = 'Offer the widest range of payment methods: cards, PayPal, etc.';
+$_MODULE['<{ps_checkout}prestashop>promotionblock_88bccdecc2c4b9dcc8afbbc94483293c'] = 'Benefit from all PayPal expertise and advantages';
+$_MODULE['<{ps_checkout}prestashop>promotionblock_91ac9ff2b524dada18330e5104c5e708'] = 'Give access to relevant local payment methods for customers around the globe';
+$_MODULE['<{ps_checkout}prestashop>promotionblock_ee2bcefdfd245cabad582bbaa6b38ff5'] = 'Including:';
+$_MODULE['<{ps_checkout}prestashop>promotionblock_f1206f9fadc5ce41694f69129aecac26'] = 'Configure';
 $_MODULE['<{ps_checkout}prestashop>ajaxpaypalorderlegacy_9cb8277c514a23ac5cb62632e14abad2'] = 'PayPal Order Id:';
 $_MODULE['<{ps_checkout}prestashop>ajaxpaypalorderlegacy_dc29c5c0063af81d36b199ffb2970a9d'] = 'PayPal Order Status:';
 $_MODULE['<{ps_checkout}prestashop>ajaxpaypalorderlegacy_44749712dbec183e983dcd78a7736c41'] = 'Date';
@@ -78,24 +111,13 @@ $_MODULE['<{ps_checkout}prestashop>ajaxpaypalorder_ea4788705e6873b424c65e91c2846
 $_MODULE['<{ps_checkout}prestashop>ajaxpaypalorder_4b245695f7aed6ecbb8563c43746e720'] = 'Your transaction refund request will be sent to PayPal. After that, you’ll need to manually process the refund action in the PrestaShop order: choose the type of refund (standard or partial) in order to generate credit slip.';
 $_MODULE['<{ps_checkout}prestashop>ajaxpaypalorder_4ceb2a7564dfbf7e6cf1af8e5414cb51'] = 'Choose amount to refund (tax included)';
 $_MODULE['<{ps_checkout}prestashop>ajaxpaypalorder_d7a33669a0339e4ddf767d4ce80488eb'] = 'Maximum [AMOUNT_MAX] [CURRENCY] (TTC)';
-$_MODULE['<{ps_checkout}prestashop>paymentoptions_a44217022190f5734b2f72ba1e4f8a79'] = 'Card number';
-$_MODULE['<{ps_checkout}prestashop>paymentoptions_95b16127e70e8a90220404fb48343182'] = 'Expiry date';
-$_MODULE['<{ps_checkout}prestashop>paymentoptions_5ea7f231296949070013bc43715aae01'] = 'CVC';
-$_MODULE['<{ps_checkout}prestashop>displayorderconfirmation_a47005f7a79a267052608d713c8cfe8d'] = 'Your order hasn\'t been validated yet, only created. There can be an issue with your payment or it can be captured later, please contact our customer service to have more details about it.';
-$_MODULE['<{ps_checkout}prestashop>displayorderconfirmation_32187a5bef114c112c1ef96ca2e3da1a'] = 'Your order is confirmed.';
-$_MODULE['<{ps_checkout}prestashop>displaypayment_a44217022190f5734b2f72ba1e4f8a79'] = 'Card number';
-$_MODULE['<{ps_checkout}prestashop>displaypayment_95b16127e70e8a90220404fb48343182'] = 'Expiry date';
-$_MODULE['<{ps_checkout}prestashop>displaypayment_5ea7f231296949070013bc43715aae01'] = 'CVC';
-$_MODULE['<{ps_checkout}prestashop>displaypayment_46b9e3665f187c739c55983f757ccda0'] = 'I confirm my order';
-$_MODULE['<{ps_checkout}prestashop>displaypaymenttop_733ea3e302b9c48da7777481ed50e59a'] = 'Processing payment canceled, please choose another payment method or try again.';
-$_MODULE['<{ps_checkout}prestashop>displaypaymenttop_42275e6d860a19342a3943af7d1e48a0'] = 'Processing payment error';
-$_MODULE['<{ps_checkout}prestashop>displaypaymentbybinaries_d7467080ec566ee0c6cb59242ee28fa5'] = 'You must accept the terms and conditions to be able to process your order.';
-$_MODULE['<{ps_checkout}prestashop>validateorder_5023dbc72719b0d03162a18fda6db2b3'] = 'There was an error processing your order';
-$_MODULE['<{ps_checkout}prestashop>validateorder_ae4c492eb3684a190e9d5b01729fb8c5'] = 'Customer Service have been notified, please contact us to check if your payment has been processed.';
-$_MODULE['<{ps_checkout}prestashop>validateorder_ee9ed9d7ec3ab0ddec14317d4d9431fe'] = 'Click here to contact Customer Service';
-$_MODULE['<{ps_checkout}prestashop>validateorder_6b7f69a204e6842b30a32cd9cc252990'] = 'You can provide following additional details:';
-$_MODULE['<{ps_checkout}prestashop>validateorder_ddd5b53a3ee360450a35db10cd6b54c1'] = 'Error code :';
-$_MODULE['<{ps_checkout}prestashop>validateorder_f1fc574c6bad028c6bf2207ab7e4be35'] = 'Error message :';
+$_MODULE['<{ps_checkout}prestashop>validateorderlegacy_d2d212703e406836886db5cfdbc8073a'] = 'Order processing error';
+$_MODULE['<{ps_checkout}prestashop>validateorderlegacy_5023dbc72719b0d03162a18fda6db2b3'] = 'There was an error processing your order';
+$_MODULE['<{ps_checkout}prestashop>validateorderlegacy_ae4c492eb3684a190e9d5b01729fb8c5'] = 'Customer Service have been notified, please contact us to check if your payment has been processed.';
+$_MODULE['<{ps_checkout}prestashop>validateorderlegacy_ee9ed9d7ec3ab0ddec14317d4d9431fe'] = 'Click here to contact Customer Service';
+$_MODULE['<{ps_checkout}prestashop>validateorderlegacy_6b7f69a204e6842b30a32cd9cc252990'] = 'You can provide following additional details:';
+$_MODULE['<{ps_checkout}prestashop>validateorderlegacy_ddd5b53a3ee360450a35db10cd6b54c1'] = 'Error code :';
+$_MODULE['<{ps_checkout}prestashop>validateorderlegacy_f1fc574c6bad028c6bf2207ab7e4be35'] = 'Error message :';
 $_MODULE['<{ps_checkout}prestashop>paymentcardconfirmation_644818852b4dd8cf9da73543e30f045a'] = 'Go back to the Checkout';
 $_MODULE['<{ps_checkout}prestashop>paymentcardconfirmation_6ff063fbc860a79759a7369ac32cee22'] = 'Checkout';
 $_MODULE['<{ps_checkout}prestashop>paymentcardconfirmation_21ff087f1520a70163128cae982de67a'] = 'Card payment';
@@ -115,15 +137,14 @@ $_MODULE['<{ps_checkout}prestashop>paymentcardconfirmation_569fd05bdafa1712c4f6b
 $_MODULE['<{ps_checkout}prestashop>paymentcardconfirmation_46b9e3665f187c739c55983f757ccda0'] = 'I confirm my order';
 $_MODULE['<{ps_checkout}prestashop>paymentcardconfirmation_16aefbf48d8803216285343472025aed'] = 'MM/YY';
 $_MODULE['<{ps_checkout}prestashop>paymentcardconfirmation_bc9189406be84ec297464a514221406d'] = 'XXX';
-$_MODULE['<{ps_checkout}prestashop>validateorderlegacy_d2d212703e406836886db5cfdbc8073a'] = 'Order processing error';
-$_MODULE['<{ps_checkout}prestashop>validateorderlegacy_5023dbc72719b0d03162a18fda6db2b3'] = 'There was an error processing your order';
-$_MODULE['<{ps_checkout}prestashop>validateorderlegacy_ae4c492eb3684a190e9d5b01729fb8c5'] = 'Customer Service have been notified, please contact us to check if your payment has been processed.';
-$_MODULE['<{ps_checkout}prestashop>validateorderlegacy_ee9ed9d7ec3ab0ddec14317d4d9431fe'] = 'Click here to contact Customer Service';
-$_MODULE['<{ps_checkout}prestashop>validateorderlegacy_6b7f69a204e6842b30a32cd9cc252990'] = 'You can provide following additional details:';
-$_MODULE['<{ps_checkout}prestashop>validateorderlegacy_ddd5b53a3ee360450a35db10cd6b54c1'] = 'Error code :';
-$_MODULE['<{ps_checkout}prestashop>validateorderlegacy_f1fc574c6bad028c6bf2207ab7e4be35'] = 'Error message :';
 $_MODULE['<{ps_checkout}prestashop>expresscheckout_e81c4e4f2b7b93b481e13a8553c2ae1b'] = 'or';
 $_MODULE['<{ps_checkout}prestashop>expresscheckout_26a07aefd353e71a3ea90ef991d812ae'] = 'Fast checkout';
+$_MODULE['<{ps_checkout}prestashop>validateorder_5023dbc72719b0d03162a18fda6db2b3'] = 'There was an error processing your order';
+$_MODULE['<{ps_checkout}prestashop>validateorder_ae4c492eb3684a190e9d5b01729fb8c5'] = 'Customer Service have been notified, please contact us to check if your payment has been processed.';
+$_MODULE['<{ps_checkout}prestashop>validateorder_ee9ed9d7ec3ab0ddec14317d4d9431fe'] = 'Click here to contact Customer Service';
+$_MODULE['<{ps_checkout}prestashop>validateorder_6b7f69a204e6842b30a32cd9cc252990'] = 'You can provide following additional details:';
+$_MODULE['<{ps_checkout}prestashop>validateorder_ddd5b53a3ee360450a35db10cd6b54c1'] = 'Error code :';
+$_MODULE['<{ps_checkout}prestashop>validateorder_f1fc574c6bad028c6bf2207ab7e4be35'] = 'Error message :';
 $_MODULE['<{ps_checkout}prestashop>paymentpaypalconfirmation_644818852b4dd8cf9da73543e30f045a'] = 'Go back to the Checkout';
 $_MODULE['<{ps_checkout}prestashop>paymentpaypalconfirmation_6ff063fbc860a79759a7369ac32cee22'] = 'Checkout';
 $_MODULE['<{ps_checkout}prestashop>paymentpaypalconfirmation_21ff087f1520a70163128cae982de67a'] = 'Card payment';
@@ -191,8 +212,6 @@ $_MODULE['<{ps_checkout}prestashop>hostedfieldserrors_882f4e002f44f8caf3c8749c27
 $_MODULE['<{ps_checkout}prestashop>hostedfieldserrors_28bdeeeb111a2556d5ddeb22c5143e91'] = 'You skipped 3D Secure validation, please try again or try another payment method.';
 $_MODULE['<{ps_checkout}prestashop>hostedfieldserrors_bd972c54e30277bb235fa34b5df46593'] = '3D Secure processing validation error, please try again or try another payment method.';
 $_MODULE['<{ps_checkout}prestashop>hostedfieldserrors_4aeac3b5e47dfe0a59d0c7992ed091ad'] = 'Card processing payment error, please try again or try another payment method.';
-$_MODULE['<{ps_checkout}prestashop>transactionpresenter_76f0ed934de85cc7131910b32ede7714'] = 'Refund';
-$_MODULE['<{ps_checkout}prestashop>transactionpresenter_c453a4b8e8d98e82f35b67f433e3b4da'] = 'Payment';
 $_MODULE['<{ps_checkout}prestashop>orderpresenter_0eceeb45861f9585dd7a97a3e36f85c6'] = 'Created';
 $_MODULE['<{ps_checkout}prestashop>orderpresenter_248336101b461380a4b2391a7625493d'] = 'Saved';
 $_MODULE['<{ps_checkout}prestashop>orderpresenter_6f8063417ab31f38d864c28302f3de2f'] = 'Approved';
@@ -204,10 +223,8 @@ $_MODULE['<{ps_checkout}prestashop>orderpresenter_9f004157e4c148dac71da3ae590635
 $_MODULE['<{ps_checkout}prestashop>orderpresenter_cc61945cbbf46721a053467c395c666f'] = 'Refunded';
 $_MODULE['<{ps_checkout}prestashop>orderpresenter_c453a4b8e8d98e82f35b67f433e3b4da'] = 'Payment';
 $_MODULE['<{ps_checkout}prestashop>orderpresenter_76f0ed934de85cc7131910b32ede7714'] = 'Refund';
-$_MODULE['<{ps_checkout}prestashop>fundingsourcetranslationprovider_1d565b9e5303987bb1b1938d5d458bca'] = 'Card';
-$_MODULE['<{ps_checkout}prestashop>fundingsourcetranslationprovider_f990493af3321939ca512f8f2cace108'] = 'Pay by %s';
-$_MODULE['<{ps_checkout}prestashop>fundingsourcetranslationprovider_34ace703adbf14df140d3c02234f67bd'] = 'Pay with a PayPal account';
-$_MODULE['<{ps_checkout}prestashop>fundingsourcetranslationprovider_983fe12e91079dcb00c74772b50747a3'] = 'Pay by Card - 100% secure payments';
+$_MODULE['<{ps_checkout}prestashop>transactionpresenter_76f0ed934de85cc7131910b32ede7714'] = 'Refund';
+$_MODULE['<{ps_checkout}prestashop>transactionpresenter_c453a4b8e8d98e82f35b67f433e3b4da'] = 'Payment';
 $_MODULE['<{ps_checkout}prestashop>translations_c75f7811d70d17dbcd88e9d03752cbed'] = 'Authentication';
 $_MODULE['<{ps_checkout}prestashop>translations_3131503f02d3c484982dd6752109ad1c'] = 'Customize checkout experience';
 $_MODULE['<{ps_checkout}prestashop>translations_37c3e853135c8286d58849ec93874750'] = 'Manage Activity';
@@ -215,6 +232,7 @@ $_MODULE['<{ps_checkout}prestashop>translations_fe4c6a5e7bd6793b37370e4e46daf998
 $_MODULE['<{ps_checkout}prestashop>translations_6a26f548831e6a8c26bfbbd9f6ec61e0'] = 'Help';
 $_MODULE['<{ps_checkout}prestashop>translations_c9cc8cce247e49bae79f15173ce97354'] = 'Save';
 $_MODULE['<{ps_checkout}prestashop>translations_3b1278d88b9db123d87a2e644afbda97'] = 'Test mode is turned on';
+$_MODULE['<{ps_checkout}prestashop>translations_42885463cee2cd63b1cabc1be6785db0'] = 'An error during configuration was detected. Please reset the PrestaShop Checkout module and configure it again.';
 $_MODULE['<{ps_checkout}prestashop>translations_2bd63f8a40a2830f6e7c4043bb534137'] = 'Multistore detected';
 $_MODULE['<{ps_checkout}prestashop>translations_461af1b437e5d9684f1e3df305d2bc7d'] = 'Each shop must be configured separately, even if you configure the same account on all of them.';
 $_MODULE['<{ps_checkout}prestashop>translations_3ac5bf8a648deff04ff5e08ade3ada40'] = 'Please select the first shop to configure from the list below :';
@@ -276,6 +294,8 @@ $_MODULE['<{ps_checkout}prestashop>translations_b3a3bef1143977b9be6f9058641b1035
 $_MODULE['<{ps_checkout}prestashop>translations_74cd3a6cbf54c04a5634352d476f2b2f'] = 'Error, try later.';
 $_MODULE['<{ps_checkout}prestashop>translations_d78c6d3fb359d61a40ceea54f41d5f06'] = 'Thank you, close this message';
 $_MODULE['<{ps_checkout}prestashop>translations_c84a973ad6bd1079ae08b4f3d3584e0b'] = 'Send my legal documents now';
+$_MODULE['<{ps_checkout}prestashop>translations_9cb7f08469a52068a24e2827b8bff107'] = 'You\'re all set !';
+$_MODULE['<{ps_checkout}prestashop>translations_26a180e6da68731b08a94399789ff518'] = 'Congrats ! You can start selling online now.';
 $_MODULE['<{ps_checkout}prestashop>translations_807235d3474190247606812059b87a5f'] = 'As soon as PayPal gets all your documents, you\'ll have to wait 48h for final approval.';
 $_MODULE['<{ps_checkout}prestashop>translations_081d8c5739e6266fddfb202afd722324'] = 'One more thing : send documents to be fully approved by PayPal';
 $_MODULE['<{ps_checkout}prestashop>translations_2dddad3a82e8e68edd68fe1776c1c13b'] = 'Connect your PrestaShop account';
@@ -403,6 +423,7 @@ $_MODULE['<{ps_checkout}prestashop>translations_a60e65f4e09379d60910e84d5a272c8e
 $_MODULE['<{ps_checkout}prestashop>translations_1c63ebf82ce8b0e472c0d3a4b38ff78d'] = 'Manage currencies';
 $_MODULE['<{ps_checkout}prestashop>translations_dfcfc43722eef1eab1e4a12e50a068b1'] = 'Currencies';
 $_MODULE['<{ps_checkout}prestashop>translations_03146ba7e70c9ea593096c7ab4831512'] = 'Define the currency conversion rules';
+$_MODULE['<{ps_checkout}prestashop>translations_d14a8aa0420b7f7de59091398a53fcd9'] = 'Let\'s choose the conversion rules for any transaction in a currency other than those activated on your account, should they be automatically converted or request your validation.';
 $_MODULE['<{ps_checkout}prestashop>translations_0138bb3d537f91354c2e69ea8fe04921'] = 'Manage conversion rules';
 $_MODULE['<{ps_checkout}prestashop>translations_1b4c17532f2e6390cadc07e662079870'] = 'Conversion rules';
 $_MODULE['<{ps_checkout}prestashop>translations_54c1127bed31e947d0951af3263522cf'] = 'Configure your bank statements description';
@@ -450,27 +471,7 @@ $_MODULE['<{ps_checkout}prestashop>translations_a390cb45733734e47c45d8ba62f2b0e9
 $_MODULE['<{ps_checkout}prestashop>translations_9180f9a5a138e11f11e569e1e1680d4e'] = 'Commission';
 $_MODULE['<{ps_checkout}prestashop>translations_96b0141273eabab320119c467cdcaf17'] = 'Total';
 $_MODULE['<{ps_checkout}prestashop>translations_06df33001c1d7187fdd81ea1f5b277aa'] = 'Actions';
-$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_1b43db46cf115ecaf2b2e79c780b5266'] = 'No PrestaShop Order identifier received';
-$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_8aeb76260f5c8706d7e4e723f4417424'] = 'This PrestaShop Order [PRESTASHOP_ORDER_ID] is not paid with PrestaShop Checkout';
-$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_0f1c930c145fe9e076b18148be8d2860'] = 'Unable to find PayPal Order associated to this PrestaShop Order [PRESTASHOP_ORDER_ID]';
-$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_e0284fd0919f131573a5b9a542f80a58'] = 'Unable to fetch PayPal Order [PAYPAL_ORDER_ID]';
-$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_ccf338e772778287ddef6911855e5ba3'] = 'PayPal Order is invalid.';
-$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_bc06e3a40808fc7351ff8f57b3bad7cf'] = 'PayPal Transaction is invalid.';
-$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_5825dada06af7bef8ae4db80c2c5aeba'] = 'PayPal refund amount is invalid.';
-$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_da74acca9d5669367fa982b7694f5303'] = 'PayPal refund currency is invalid.';
-$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_d1a7ac6d45dcb4a782b441e29380056a'] = 'Refund has been processed by PayPal.';
-$_MODULE['<{ps_checkout}prestashop>adminajaxprestashopcheckoutcontroller_ee6403a0a4d60590a6b6634df2fdce3f'] = 'Refund cannot be processed by PayPal.';
-$_MODULE['<{ps_checkout}prestashop>validate_ff74fb308795919496b905a116ae1da6'] = 'This payment method is unavailable';
-$_MODULE['<{ps_checkout}prestashop>validate_7a10859a43abaade1a012eee5c336004'] = 'Unable to call API';
-$_MODULE['<{ps_checkout}prestashop>validate_2be21e54f13c38cffa6982e6745e6f88'] = 'PayPal order identifier is missing';
-$_MODULE['<{ps_checkout}prestashop>validate_74669be39f71a0c86319cba711d40bb6'] = 'PayPal payment method is missing';
-$_MODULE['<{ps_checkout}prestashop>validate_2cf1090c7f589e820c7379dd616aa927'] = 'Cart is invalid';
-$_MODULE['<{ps_checkout}prestashop>validate_3c79e9f67771d5e278886a2d54f18c29'] = 'Order cannot be saved';
-$_MODULE['<{ps_checkout}prestashop>validate_fdef7819688bef617b84868f7713f883'] = 'This message is sent automatically by module PrestaShop Checkout';
-$_MODULE['<{ps_checkout}prestashop>validate_ee02bd0a1dffdbc6ee993d07fa3997b7'] = 'A customer encountered a processing payment error :';
-$_MODULE['<{ps_checkout}prestashop>validate_162c9109e4428997906e50651ef16b33'] = 'Customer identifier:';
-$_MODULE['<{ps_checkout}prestashop>validate_1889f1b9cd95ba96c924904b633e6802'] = 'Cart identifier:';
-$_MODULE['<{ps_checkout}prestashop>validate_937a6208751c6044e846b7e70cf5305c'] = 'PayPal order identifier:';
-$_MODULE['<{ps_checkout}prestashop>validate_c4dde5b1549f1efa1692d8873acb62db'] = 'Exception identifier:';
-$_MODULE['<{ps_checkout}prestashop>validate_b0245f6ceb905dcd9d2cda968eca9290'] = 'Exception detail:';
-$_MODULE['<{ps_checkout}prestashop>validate_ad882fed0995d9be1922fff253202368'] = 'If you need assistance, please contact our Support Team on PrestaShop Checkout configuration page on Help subtab.';
+$_MODULE['<{ps_checkout}prestashop>fundingsourcetranslationprovider_1d565b9e5303987bb1b1938d5d458bca'] = 'Card';
+$_MODULE['<{ps_checkout}prestashop>fundingsourcetranslationprovider_f990493af3321939ca512f8f2cace108'] = 'Pay by %s';
+$_MODULE['<{ps_checkout}prestashop>fundingsourcetranslationprovider_34ace703adbf14df140d3c02234f67bd'] = 'Pay with a PayPal account';
+$_MODULE['<{ps_checkout}prestashop>fundingsourcetranslationprovider_983fe12e91079dcb00c74772b50747a3'] = 'Pay by Card - 100% secure payments';
